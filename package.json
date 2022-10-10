@@ -1,0 +1,24 @@
+{
+  "name": "djs-bot",
+  "description": "Every new repl comes with a `.replit` and a `replit.nix` file that let you configure your repl to do just about anything in any language!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "concurrently --restart-tries 10000000 --prefix \"[{name}]\" --names \"EXPRESS,DISCORD\" -c \"yellow.bold,blue.bold\" \"node server.js\" \"node index.js\""
+  },
+  "dependencies": {
+    "@discordjs/builders": "^1.2.0",
+    "@keyv/postgres": "^1.3.1",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "glob": "^8.0.3",
+    "keyv": "^4.5.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
